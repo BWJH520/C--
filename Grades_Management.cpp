@@ -23,12 +23,12 @@ int main()
 {
 	int action;
 	do{
-		cout<<"-----------²Ëµ¥-----------"<<endl;
-		cout<<"1)²é¿´Ñ§ÉúÃûµ¥"<<endl;
-		cout<<"2)Ñ¡¿Î"<<endl;
-		cout<<"3)ÍËÑ¡"<<endl;
-		cout<<"4)Â¼Èë³É¼¨"<<endl;
-		cout<<"5)ÍË³ö³ÌĞò"<<endl;
+		cout<<"-----------ï¿½Ëµï¿½-----------"<<endl;
+		cout<<"1)ï¿½é¿´Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
+		cout<<"2)Ñ¡ï¿½ï¿½"<<endl;
+		cout<<"3)ï¿½ï¿½Ñ¡"<<endl;
+		cout<<"4)Â¼ï¿½ï¿½ï¿½É¼ï¿½"<<endl;
+		cout<<"5)ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
 
 		cin>>action;
 		switch(action){
@@ -47,15 +47,15 @@ int main()
 		case 5:
 			return 0;
 		default:
-			cout<<"ÄúÊäÈëÁË´íÎóµÄ²Ëµ¥Ïî£¬ÇëÖØĞÂÑ¡Ôñ£¡";
+			cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½Ä²Ëµï¿½ï¿½î£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½";
 		}
 	}while(action!=5);
 }
 
 void list()
 {
-	cout<<"-------Ñ§ÉúÃûµ¥-------"<<endl;
-	cout<<"ĞÕÃû\t"<<"Ñ§ºÅ\t"<<"ÒÑÑ¡¿Î³Ì\t"<<"³É¼¨"<<endl;
+	cout<<"-------Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-------"<<endl;
+	cout<<"ï¿½ï¿½ï¿½ï¿½\t"<<"Ñ§ï¿½ï¿½\t"<<"ï¿½ï¿½Ñ¡ï¿½Î³ï¿½\t"<<"ï¿½É¼ï¿½"<<endl;
 	if(modelCount>0)
 	{
 		for(int i=0;i<modelCount;i++)
@@ -68,10 +68,10 @@ void list()
 	else
 	{
 		cout <<endl;
-		cout << "Ñ§ÉúÃûµ¥Îª¿Õ£¡"<<endl;
+		cout << "Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½"<<endl;
 		cout <<endl;
 	}
-	cout<<"-------Ñ§ÉúÃûµ¥-------"<<endl;
+	cout<<"-------Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-------"<<endl;
 }
 void enterStucourse()
 {
@@ -98,10 +98,10 @@ void outStucourse(){
 
 	int i = find(student.model);
 	if(i == modelCount){
-		cout<<"¿Î³Ì´íÎó"<<endl;
+		cout<<"ï¿½Î³Ì´ï¿½ï¿½ï¿½"<<endl;
 	}else
 	{ 
-		strcpy(students[i].course ,"ÎŞ");
+		strcpy(students[i].course ,"ï¿½ï¿½");
 	}
 }
 
@@ -110,25 +110,25 @@ void enterStugrade(){
 	int grade;
 	char a='a';
 	do{
-		cout<<"ÇëÊäÈëÑ§ºÅ£º"<<endl;
+		cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Å£ï¿½"<<endl;
 		cin>>student.number;
 		int i=fd(student.number);
 		//cout<<i<<endl;
 		if( i==modelCount )
 		{
-			cout<<"Ñ§ºÅ´íÎó£¡"<<endl;
+			cout<<"Ñ§ï¿½Å´ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
 			break;
 		}
-		cout << "ÇëÊäÈë³É¼¨:"<<endl;
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½:"<<endl;
 		cin>>grade;
 		if(grade<0||grade>100)
 		{
-			cout << "³É¼¨´íÎó£¡"<<endl; 
+			cout << "ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl; 
 			break;
 		}
 		students[i].grade=grade;
 
-		cout<<"ÊÇ·ñ¼ÌĞøÊäÈë³É¼¨?(y/n)"<<endl;
+		cout<<"ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½?(y/n)"<<endl;
 		cin>>a;
 	}while(a == 'y');
 }
@@ -136,13 +136,13 @@ void enterStugrade(){
 void input(struct Student &student)
 {
 	
-	cout<<"ĞÕÃû£º";
+	cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 	cin>>student.model;
 
-	cout<<"Ñ§ºÅ£º";
+	cout<<"Ñ§ï¿½Å£ï¿½";
 	cin >>student.number;
 
-	cout<<"¿Î³Ì£º";
+	cout<<"ï¿½Î³Ì£ï¿½";
 	cin >>student.course;
 }
 
@@ -158,7 +158,7 @@ int find(char* model){
 int fd(char* number){
 	int i;
 	for(i=0;i<modelCount;i++){
-		if( strcmp(students[i].number,number)){
+		if( strcmp(students[i].number,number)==0){
 			break;
 		}
 	}
